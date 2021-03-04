@@ -45,6 +45,10 @@ figure img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
+.header .material-icons {
+    display: none;
+}
+
 .skills div {
     display: flex;
     flex-direction: row;
