@@ -8,10 +8,10 @@ for (let i = 0; i < arrayBloks.length; i++) {
 
     //Change icon
     const iconPlus = document.querySelectorAll('.plus');
-    if (iconPlus[i].src == "https://silly-khorana-9b4b3f.netlify.app/assets/remove-white-36dp.svg") {
-      return iconPlus[i].src = "https://silly-khorana-9b4b3f.netlify.app/assets/add-white-36dp.svg";
-    } else {
+    if (iconPlus[i].src == "https://silly-khorana-9b4b3f.netlify.app/assets/add-white-36dp.svg") {
       return iconPlus[i].src = "https://silly-khorana-9b4b3f.netlify.app/assets/remove-white-36dp.svg";
+    } else {
+      return iconPlus[i].src = "https://silly-khorana-9b4b3f.netlify.app/assets/add-white-36dp.svg";
     }
   })
 }
