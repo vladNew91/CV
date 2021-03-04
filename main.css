@@ -79,6 +79,7 @@ main {
 .name h1 {
     font-size: 2rem;
     text-align: center;
+    text-shadow: 1px 2px 3px #e7e5e5;
 }
 
 .content {
@@ -325,7 +326,7 @@ a {
     }
 
     div .hiddenBlock {
-        max-height: 999px;
+        max-height: 200px;
         transition: all 1s ease;
     }
 }
