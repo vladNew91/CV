@@ -1,5 +1,6 @@
 const arrayOfButtons = document.querySelectorAll('.showInfo');
 const arrayBloks = document.querySelectorAll('.hiddenBlock');
+let i = 0;
 
 for (let i = 0; i < arrayBloks.length; i++) {
   //change class
@@ -15,7 +16,6 @@ for (let i = 0; i < arrayBloks.length; i++) {
     }
   })
 }
-
 
 //Change colors and shadows of name
 const arrayOfColors =  [
@@ -38,7 +38,6 @@ const arrayOfShadows = [
   '1px 2px 3px rgb(255, 255, 255)'
 ];
 
-let i = 0;
 
 const changeStyle = document.querySelector('.changeColor');
 const lightDisko = () => {
