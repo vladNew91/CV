@@ -1,347 +1,357 @@
 .wrapper {
-    display: flex;
-    flex-direction: row;
-    width: 70%;
-    height: max-content;
-    margin: 0 auto;
-};
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: max-content;
+  margin: 0 auto;
+}
 
 /* HEADER */
-.header {
-    display: flex;
-    flex-direction: column;
+header {
+  display: flex;
+  flex-direction: column;
 }
 
 .material-icons {
-    display: none;
+  display: none;
 }
 
-.header>div {
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto 0;
-    width: 80%;
-    height: max-content;
-    color: #f5f5f5;
+.headerBlok {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 0;
+  width: 80%;
+  height: max-content;
+  color: #f5f5f5;
 }
 
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 figure img {
-    margin: auto;
-    padding: 0;
-    display: flex;
-    width: 150px;
-    border-radius: 50%;
-    border: 10px solid #373741;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  padding: 0;
+  display: flex;
+  width: 150px;
+  border-radius: 50%;
+  border: 10px solid #373741;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.header h2 {
-    background: #373741;
-    text-transform: uppercase;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+header h2 {
+  background: #373741;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.header .material-icons {
-    display: none;
+header .material-icons {
+  display: none;
 }
 
 .skills div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.contacts li {
+  margin-bottom: 5px;
 }
 /* END HEADER */
 
 /* CONTENT  */
 main {
-    display: flex;
-    flex-direction: column;
-    width: 40rem;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  height: 100%;
 }
 
 .name {
-    display: flex;
-    flex-direction: column;
-    background: #545454;
-    width: 100%;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    color: #e1d8cf;
+  display: flex;
+  flex-direction: column;
+  background: #545454;
+  width: 100%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #e1d8cf;
 }
 
 .name h1 {
-    font-size: 2rem;
-    text-align: center;
-    text-shadow: 1px 2px 3px #e7e5e5;
+  font-size: 2rem;
+  text-align: center;
+  text-shadow: 1px 2px 3px #e7e5e5;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 
-.content>article {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: max-content;
+.content > article {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: max-content;
 }
 
 .content h2 {
-    background: #684d9d;
-    font-size: 1rem;
-    margin: 5%;
-    border-radius: 10px;
+  background: #684d9d;
+  font-size: 1rem;
+  margin: 5%;
+  border-radius: 10px;
 }
 
 .content article:nth-child(1) p:nth-child(3n-1) {
-    color: black;
-    margin-left: 10%;
-    text-transform: uppercase;
-    width: 100%;
+  color: black;
+  margin-left: 10%;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 .content article:nth-child(2) p:nth-child(2n) {
-    color: black;
-    margin-left: 10%;
-    text-transform: uppercase;
-    width: 100%;
+  color: black;
+  margin-left: 10%;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 .content article p {
-    color: #696663;
-    margin-left: 12%;
+  color: #696663;
+  margin-left: 12%;
 }
 /* END CONTENT */
 
 h2 {
-    padding-left: 5px;
-    color: #e1d8cf;
-    text-transform: uppercase;
-    font-family: 'Aleo', serif;
-    font-size: 20px;
+  padding-left: 5px;
+  color: #e1d8cf;
+  text-transform: uppercase;
+  font-family: 'Aleo', serif;
+  font-size: 20px;
 }
 
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    margin: 0;
-    list-style-type:none;
-    padding: 0;
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 li {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
-    color: #f5f5f5;
-    text-decoration: none;
+  color: #f5f5f5;
+  text-decoration: none;
 }
 
 .contacts a:hover {
-    color: #000000;
+  color: #000000;
+}
+
+@media (max-width: 2560px) {
+  .wrapper {
+    width: max-content;
+  }
 }
 
 @media (max-width: 1024px) {
-    .wrapper {
-        width: 90%;
-    };
+  .wrapper {
+    width: 90%;
+  }
 }
 
 @media (max-width: 768px) {
-    .wrapper {
-        width: 100%;
-    };
+  .wrapper {
+    width: 100%;
+  }
 
-    .header h2 {
-        font-size: 16px;
-    }
+  header h2 {
+    font-size: 16px;
+  }
 
-    .content article:nth-child(1) p:nth-child(3n-1) {
-        font-size: 14px;
-    }
+  .content article:nth-child(1) p:nth-child(3n-1) {
+    font-size: 14px;
+  }
 
-    .content article:nth-child(2) p:nth-child(2n) {
-        font-size: 14px;
-    }
+  .content article:nth-child(2) p:nth-child(2n) {
+    font-size: 14px;
+  }
 
-    .name h1 {
-        width: 80%;
-    }
+  .name h1 {
+    width: 80%;
+  }
 
-    .skills div {
-        display: flex;
-        flex-direction: column;
-    }
+  .skills section {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-@media (max-width: 599px) {
-    .header {
-        width: 299.5px!important;
-    }
+@media (max-width: 640px) {
+  header {
+    width: 50% !important;
+  }
 
-    main {
-        width: 299.5px;
-    }
+  main {
+    width: 50%;
+  }
 
-    figure img {
-        width: 120px;
-        border: 10px solid #373741;
-    }
+  figure img {
+    width: 120px;
+    border: 10px solid #373741;
+  }
 
-    .header>div {
-        width: 90%;
-        margin-top: 20px;
-    }
+  header > .headerBlok {
+    width: 90%;
+  }
 
-    .name {
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .name {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .name h1 {
-        font-size: 1.5em;
-    }
+  .name h1 {
+    font-size: 1.5em;
+  }
 
-    .name h2 {
-        font-size: 15px;
-    }
+  .name h2 {
+    font-size: 15px;
+  }
 
-    .content article {
-        width: 95%;
-    }
+  .content article {
+    width: 95%;
+  }
 
-    .header h2 {
-        font-size: 15px;
-    }
+  header h2 {
+    font-size: 15px;
+  }
 
-    .skills div {
-        flex-direction: row;
-    }
+  .content article:nth-child(1) p:nth-child(3n-1),
+  .content article:nth-child(2) p:nth-child(2n) {
+    width: 90%;
+  }
 }
 
 @media (max-width: 425px) {
-    body {
-        margin: 0;
-    }
+  body {
+    margin: 0;
+  }
 
-    .wrapper {
-        flex-direction: column;
-        background: rgb(42, 36, 44);
-    }
+  .wrapper {
+    flex-direction: column;
+    background: rgb(42, 36, 44);
+  }
 
-    .header {
-        width: 100%!important;
-    }
+  header {
+    width: 100% !important;
+  }
 
-    figure img{
-        margin-top: 110px;
-        width: 200px;
-    }
+  figure img {
+    margin-top: 110px;
+    width: 200px;
+  }
 
-    .header h2 {
-        font-size: 18px;
-        border-radius: 2px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+  header h2 {
+    font-size: 18px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .header .material-icons {
-        display: flex;
-        right: 20px;
-        top: 10px;
-    }
+  header .material-icons {
+    display: flex;
+    right: 20px;
+    top: 10px;
+  }
 
-    .header p,
-    .contacts div {
-        max-height: 200px;
-        overflow: hidden;
-        width: 90%;
-        margin-left: 5%;
-        font-size: large;
-        transition: all 1s ease;
-    }
+  header p,
+  .contacts div {
+    max-height: 200px;
+    overflow: hidden;
+    width: 90%;
+    margin-left: 5%;
+    font-size: large;
+    transition: all 1s ease;
+  }
 
-    .skills div {
-        font-size: large;
-        max-height: 200px;
-        overflow: hidden;
-        transition: all 1s ease;
-    }
+  .skills div {
+    font-size: large;
+    max-height: 200px;
+    overflow: hidden;
+    transition: all 1s ease;
+  }
 
-    .name {
-        position: fixed;
-        top: 3%;
-        width: 100%;
-        height: 80px;
-        background: #292930;;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-    }
+  main {
+    width: 80%;
+  }
 
-    .name h2,
-    .name h1 {
-        margin: 0;
-        width: 90%;
-        text-align: center;
-    }
+  .name {
+    position: fixed;
+    top: 3%;
+    width: 100%;
+    height: 80px;
+    background: #292930;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  }
 
-    .name h2 {
-        margin-top: 10px;
-        font-size: 14px;
-    }
+  .name h2,
+  .name h1 {
+    margin: 0;
+    width: 90%;
+    text-align: center;
+  }
 
-    .content h2 {
-        font-size: 18px;
-        margin-bottom: 0;
-        width: 120%;
-    }
+  .name h2 {
+    margin-top: 10px;
+    font-size: 14px;
+  }
 
-    .content article:nth-child(1) p:nth-child(3n-1),
-    .content article:nth-child(2) p:nth-child(2n) {
-        font-size: 16px;
-        margin-top: 10px;
-        width: 120%;
-        color: rgb(255, 255, 255);
-    }
+  .content h2 {
+    font-size: 18px;
+    margin-bottom: 0;
+    width: 120%;
+  }
 
-    .content article p {
-        font-size: large;
-        color: rgba(255, 255, 255, 0.7);
-    }
+  .content article:nth-child(1) p:nth-child(3n-1),
+  .content article:nth-child(2) p:nth-child(2n) {
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+  }
 
-    .header div .hiddenBlock {
-        overflow: hidden;
-        max-height: 0px;
-        transition: all 1s ease;
-    }
+  .content p {
+    font-size: large;
+    color: rgba(255, 255, 255, 0.7);
+    width: 110%;
+  }
+
+  header .hiddenBlock {
+    overflow: hidden;
+    max-height: 0px;
+    transition: all 1s ease;
+  }
 }
 
 @media (max-width: 375px) {
-    .content h2 {
-        width: 100%;
-    }
-
-    .content article:nth-child(1) p:nth-child(3n-1),
-    .content article:nth-child(2) p:nth-child(2n) {
-        width: 100%;
-    }
+  .content h2,
+  .content p {
+    width: 100%;
+  }
 }
