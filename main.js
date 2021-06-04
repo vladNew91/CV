@@ -7,11 +7,13 @@ arrayOfButtons.forEach((el, i) => {
   el.addEventListener('click', () => {
     arrayBloks[i].classList.toggle('hiddenBlock');
 
+    const base = 'https://cv-uladzislau-nazarau.netlify.app/assets/'
+
     //Change icon
     const iconPlus = document.querySelectorAll('.plus');       
-    if (iconPlus[i].src == "https://silly-khorana-9b4b3f.netlify.app/assets/add-white-36dp.svg") {
-      return iconPlus[i].src = "https://silly-khorana-9b4b3f.netlify.app/assets/remove-white-36dp.svg";
-    } else return iconPlus[i].src = "https://silly-khorana-9b4b3f.netlify.app/assets/add-white-36dp.svg";
+    if (iconPlus[i].src == base + 'add-white-36dp.svg') {
+      return iconPlus[i].src = base + 'remove-white-36dp.svg';
+    } else return iconPlus[i].src = base + 'add-white-36dp.svg';
 })});
 
 //Change colors and shadows of name
@@ -35,7 +37,7 @@ const arrayOfShadows = [
   '1px 2px 3px rgb(255, 255, 255)'
 ];
 
-const changeStyle = document.querySelector('.changeColor');
+const changeStyle = document.getElementsByClassName('changeColor')[0];
 let i = 0;
 
 const lightDisko = () => {
