@@ -160,7 +160,7 @@ a {
   color: #000000;
 }
 
-@media (max-width: 2560px) {
+@media (max-width: 4560px) {
   .wrapper {
     width: max-content;
   }
