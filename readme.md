@@ -1,1 +1,2 @@
-[test-link](https://cv-uladzislau-nazarau.netlify.app/)
+[DEMO](https://cv-uladzislau-nazarau.netlify.app/)
+=====
