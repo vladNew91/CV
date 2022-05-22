@@ -5,67 +5,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <header  style="background: #684d9d; width: 22rem; padding-bottom: 20px;">
+        <div class="header">
             <figure class="headerBlok">
-                <img src="./assets/5х5-01.jpeg" alt="foto">
+                <img class="avatar" src="./assets/29-min.jpg" alt="foto">
             </figure>
 
-            <section class="background headerBlok">
-                <h2 class="showInfo">Personal Background
+            <section class="headerBlok">
+                <h2 class="showInfo">
+                    <span>Personal Background</span>
                     <img src="./assets/add-white-36dp.svg" class="material-icons plus" alt="icon" />
                 </h2>
 
                 <p class="hiddenBlock">
-                    Welcome. My name is Vlad, I am from Belarus. I have 2+ years develop in front-end.
-                    My assignments involved working with React, Typescript, Redux. I am also fluent in Git,
-                    Redux-Saga, Material-Ui. My current English level is A2. You can find some of my
-                    pet-projects on my GitHub. Have a nice day!
-                </p>                
+                    Welcome. My name is Uladzislau. I have more than 2 years JavaScript experience.
+                    My assignments involved working with React, React Hooks, Typescript, Redux.
+                    I am also fluent in Git, Redux-Saga, Material-Ui. My current English level is B1.
+                    You can find some of my pet-projects on my GitHub. Have a nice day!
+                </p>
             </section>
 
             <section class="skills headerBlok">
-                <h2 class="showInfo">Skills
-                    <img src="./assets/add-white-36dp.svg" class="material-icons plus" alt="icon" /> 
+                <h2 class="showInfo">
+                    <span class="headerBlok__title">Skills</span>
+                    <img src="./assets/add-white-36dp.svg" class="material-icons plus" alt="icon" />
                 </h2>
 
-                <div class="hiddenBlock">
+                <div class="hiddenBlock skills_list">
                     <ul>
                         <li>
-                            <a>HTML5</a>
-                            <a>CSS3</a>
-                            <a>JavaScript</a>
-                            <a>GitHub</a>
+                            HTML
+                        </li>
+
+                        <li>
+                            CSS
+                        </li>
+
+                        <li>
+                            JavaScript
+                        </li>
+
+                        <li>
+                            Git
+                        </li>
+
+                        <li>
+                            React
                         </li>
                     </ul>
 
                     <ul>
                         <li>
-                            <a>React</a>
-                            <a>Redux</a>
-                            <a>TypeScript</a>
-                            <a>Redux-Saga</a>
+                            React Hooks
+                        </li>
+
+                        <li>
+                            React-Redux
+                        </li>
+
+                        <li>
+                            TypeScript
+                        </li>
+
+                        <li>
+                            Redux-Saga
+                        </li>
+
+                        <li>
+                            B1 Eng lev
                         </li>
                     </ul>
                 </div>
             </section>
 
             <section class="contacts headerBlok">
-                <h2 class="showInfo">Get in Touch with Me
+                <h2 class="showInfo">
+                    <span>Get in Touch with Me</span>
                     <img src="./assets/add-white-36dp.svg" class="material-icons plus" alt="icon" />
                 </h2>
+
                 <div class="hiddenBlock">
                     <ul>
                         <li>
-                            <a target="_blank" href="">Email: vladnew91@gmail.com </a>
+                            Email: vladnew91@gmail.com
                         </li>
 
                         <li>
@@ -80,9 +109,9 @@
                     </ul>
                 </div>
             </section>
-        </header>
+        </div>
 
-        <main>
+        <div class="main">
             <article class="name">
                 <h1 class="changeColor">Uladzislau Nazarau</h1>
                 <h2>FRONT-END DEVELOPER (REACT)</h2>
@@ -99,14 +128,13 @@
                 <article>
                     <h2>Education</h2>
                     <p>Belarusian State University of Transport</p>
-                    <p>Bachelor's degree, Real estate engineer<br> 
-                    2009-2014<p>
+                    <p>Bachelor's degree, Real estate engineer<br>2009-2014<p>
                 </article>
-            </div>    
+            </div>
         </main>
     </div>
-</div>
-<script src="main.js"></script>
+
+    <script src="main.js"></script>
 </body>
 
 </html>

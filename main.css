@@ -1,15 +1,25 @@
+:root {
+  --first-color: #373741;
+  --second-color: #684d9d;
+  --shadow: #000000b3;
+}
+
+body {
+  margin: 0;
+}
+
 .wrapper {
   display: flex;
-  flex-direction: row;
-  width: 70%;
-  height: max-content;
-  margin: 0 auto;
+  min-height: 100vh;
 }
 
 /* HEADER */
-header {
+.header {
   display: flex;
   flex-direction: column;
+  background: var(--second-color);
+  width: 35%;
+  padding-bottom: 20px;
 }
 
 .material-icons {
@@ -21,35 +31,29 @@ header {
   flex-direction: column;
   margin: 20px auto 0;
   width: 80%;
-  height: max-content;
   color: #f5f5f5;
 }
 
-figure {
-  margin: 0;
-}
-
-figure img {
+.avatar {
   margin: auto;
-  padding: 0;
-  display: flex;
-  width: 150px;
+  width: 60%;
   border-radius: 50%;
-  border: 10px solid #373741;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border: 10px solid var(--first-color);
+  box-shadow: 0px 4px 4px var(--shadow);
 }
 
-header h2 {
-  background: #373741;
+.showInfo {
+  background: var(--first-color);
   text-transform: uppercase;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 4px var(--shadow);
+  padding: 5px 5px 0;
 }
 
-header .material-icons {
+.material-icons {
   display: none;
 }
 
-.skills div {
+.skills_list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -61,19 +65,18 @@ header .material-icons {
 /* END HEADER */
 
 /* CONTENT  */
-main {
+.main {
   display: flex;
   flex-direction: column;
-  width: 40rem;
-  height: 100%;
+  width: 65%;
+  min-height: 100vh;
 }
 
 .name {
   display: flex;
   flex-direction: column;
-  background: #545454;
-  width: 100%;
-  height: 300px;
+  background: var(--first-color);
+  height: 40%;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
@@ -101,7 +104,7 @@ main {
 }
 
 .content h2 {
-  background: #684d9d;
+  background: var(--second-color);
   font-size: 1rem;
   margin: 5%;
   border-radius: 10px;
@@ -160,18 +163,6 @@ a {
   color: #000000;
 }
 
-@media (max-width: 4560px) {
-  .wrapper {
-    width: max-content;
-  }
-}
-
-@media (max-width: 1024px) {
-  .wrapper {
-    width: 90%;
-  }
-}
-
 @media (max-width: 768px) {
   .wrapper {
     width: 100%;
@@ -204,13 +195,9 @@ a {
     width: 50% !important;
   }
 
-  main {
-    width: 50%;
-  }
-
   figure img {
     width: 120px;
-    border: 10px solid #373741;
+    border: 10px solid var(--first-color);
   }
 
   header > .headerBlok {
@@ -298,7 +285,7 @@ a {
     transition: all 1s ease;
   }
 
-  main {
+  .main {
     width: 80%;
   }
 
